@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event HOrizon Tech Stack</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Event HOrizon Tech Stack</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="container main-content">
+        <!-- Posts Feed -->
+        <div class="feed" id="feed">
+            <!-- Posts loaded dynamically via JavaScript -->
+        </div>
+    </main>
+
+    <!-- ==================== FLOATING ACTION BUTTON ==================== -->
+    <div class="floating-btn" id="floatingBtn" aria-label="Create post">
+        <span>+</span>
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="#" id="newPostBtn" role="button">New Post</a>
+            <a href="#" id="editPostBtn" role="button">Edit Post</a>
+        </div>
+    </div>
+
+    <!-- ==================== POST MODAL ==================== -->
+    <div class="modal" id="postModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h2 id="modalTitle">New Post</h2>
+            <form id="postForm">
+                <input type="hidden" id="postId">
+                <div class="form-group">
+                    <label for="postTitle" class="sr-only">Title</label>
+                    <input type="text" id="postTitle" placeholder="Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="postContent" class="sr-only">Content</label>
+                    <textarea id="postContent" placeholder="Write your post here..." required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== UNDO NOTIFICATION ==================== 
+    <div id="undoNotification" class="undo-notification" role="alert" aria-live="polite">
+        Post deleted. <a href="#" id="undoDelete" role="button">Undo</a>
+        <span id="undoTimer">10</span>s
+    </div>
+
+     ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear">2023</span> MyBlog. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Update copyright year automatically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

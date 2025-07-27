@@ -1,0 +1,27 @@
+{
+  "name": "eventhorizontechstack",
+  "version": "1.0.0",
+  "description": "This repo is about a blogging website named \"Event Horizon Tech Stack\" that posts recent trending tech info and helps to get updated",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parvez152977/Event_Horizon_Tech_Stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Parvez152977/Event_Horizon_Tech_Stack/issues"
+  },
+  "homepage": "https://github.com/Parvez152977/Event_Horizon_Tech_Stack#readme"
+}
